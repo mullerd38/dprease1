@@ -463,7 +463,7 @@ var session_id = jsPsych.data.getURLVariable('SESSION_ID');
 //Save data ---------------------------------------------------------------------------------
 const subject_id = jsPsych.randomization.randomID(10);
 const filename = `${subject_id}.csv`;
-const experiment_id = "ihDohyydNeaX";
+const experiment_id = "XJFjoYakDsxF";
 // Your OSF token
 // const osfToken = 'VLFG5mbOACd0fk6jkN1IhAwbdrCi8OSm62rzTqPBreN3asR5QCcIeTBz9YkwJy1WL9CkNp';
 
@@ -502,14 +502,7 @@ if (condition ==="control"){
 }
 
 
-// Add conditionally chosen timeline
-//if (condition === "two-step") {
- // timeline.push(question, conditional_slider); // Two-step condition
-//} else {
-  //timeline.push(slider); // Single-step condition
-//}
 
-// Add the remaining trials
 timeline.push(
   procedure_testing,
   question,
