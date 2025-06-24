@@ -26,7 +26,7 @@
 
 /* Hide the star indicating required questions */
 span.required {
-  display: none !important;
+  display: none;
 }
 
 

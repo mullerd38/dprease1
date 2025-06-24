@@ -40,7 +40,7 @@ var welcome = {
   type: jsPsychHtmlButtonResponse,
   stimulus:
     "<h1 class ='custom-title'>Welcome</h1>" +
-    "<p class='instructions'>TEST4 Thank you for taking part in this survey. <b> Please note that you can only participate from a computer. </b> </p>" +
+    "<p class='instructions'>TEST5 Thank you for taking part in this survey. <b> Please note that you can only participate from a computer. </b> </p>" +
     "<p class='instructions'>We are going to ask you to imagine you are a medical researcher who wants to test the effectiveness of a fictitious medicine against a fictitious disease. " +
     "Your task will be to give your opinion on the effectiveness of this fictitious medicine .</p>" +
     "<p class='instructions'>If you have any question related to this research, please " +
@@ -87,12 +87,12 @@ var consigne = {
   on_load: function() {
     // hide the button for 5 seconds
     const btn = document.querySelector('.jspsych-html-button-response-button');    
-    btn.style.display = 'none';
+    btn.style.visibility = 'hidden';
     btn.disabled = true;
     setTimeout(function(){
-      btn.style.display = 'inline-block';
+      btn.style.visibility = 'visible';
       btn.disabled = false;
-    }, 5000);
+    }, 10000);
   }
 };
 
@@ -112,12 +112,12 @@ var consigne_thinking = {
   choices: ['I have read carefully and I can start the study'],
   on_load: function() {
     const btn = document.querySelector('.jspsych-html-button-response-button');
-    btn.style.display = 'none';
+    btn.style.visibility = 'hidden';
     btn.disabled = true;
     setTimeout(function(){
-      btn.style.display = 'inline-block';
+      btn.style.visibility = 'visible';
       btn.disabled = false;
-    }, 5000);
+    }, 10000);
   }
 };
 
@@ -204,10 +204,10 @@ var feedback = {
   choices: ['Continue'],
   on_load: function() {
     const btn = document.querySelector('.jspsych-html-button-response-button');
-    btn.style.display = 'none';
+    btn.style.visibility = 'hidden';
     btn.disabled = true;
     setTimeout(function(){
-      btn.style.display = 'inline-block';
+      btn.style.visibility = 'visible';
       btn.disabled = false;
     }, 1000);
   }
