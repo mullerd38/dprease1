@@ -40,7 +40,7 @@ var welcome = {
   type: jsPsychHtmlButtonResponse,
   stimulus:
     "<h1 class ='custom-title'>Welcome</h1>" +
-    "<p class='instructions'>TEST2 Thank you for taking part in this survey. <b> Please note that you can only participate from a computer. </b> </p>" +
+    "<p class='instructions'>TEST3 Thank you for taking part in this survey. <b> Please note that you can only participate from a computer. </b> </p>" +
     "<p class='instructions'>We are going to ask you to imagine you are a medical researcher who wants to test the effectiveness of a fictitious medicine against a fictitious disease. " +
     "Your task will be to give your opinion on the effectiveness of this fictitious medicine .</p>" +
     "<p class='instructions'>If you have any question related to this research, please " +
@@ -75,7 +75,7 @@ var consigne = {
   type: jsPsychHtmlButtonResponse,
   stimulus:
   "<p class= 'instructions_questionnary bold'>Please read these instructions very carefully. </p>" +
-  "<p class= 'instructions_questionnary'>The recently discovered Vonne syndrome causes eczema and yellowing of the skin. "+
+  "<p class= 'instructions_questionnary'>The recently discovered (fictitious) Vonne syndrome causes eczema and yellowing of the skin. "+
   "To address this, researchers have developed a drug. " +
   "Your role will be to determine whether this medicine is effective or not. </p>" +
   "<p class= 'instructions_questionnary'>To do so, you will see patients suffering from the disease one by one. " +
@@ -90,7 +90,7 @@ var consigne_thinking = {
   type: jsPsychHtmlButtonResponse,
   stimulus:
   "<p class= 'instructions_questionnary bold'>Please read these instructions very carefully. </p>" +
-  "<p class= 'instructions_questionnary'>The recently discovered Vonne syndrome causes eczema and yellowing of the skin. "+
+  "<p class= 'instructions_questionnary'>The recently discovered (fictitious) Vonne syndrome causes eczema and yellowing of the skin. "+
   "Researchers speculate that these symptoms result from a deficiency in zyntrophen, an enzyme involved in regulating skin hydration. "+
   "To address this, they have developed a drug based on fractase—a molecule that could stimulate the body’s production of zyntrophen and help restore the skin’s equilibrium. "+
   "Your role will be to determine whether this medicine is effective or not. </p>" +
