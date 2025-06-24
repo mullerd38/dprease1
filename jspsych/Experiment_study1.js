@@ -40,7 +40,7 @@ var welcome = {
   type: jsPsychHtmlButtonResponse,
   stimulus:
     "<h1 class ='custom-title'>Welcome</h1>" +
-    "<p class='instructions'>TEST3 Thank you for taking part in this survey. <b> Please note that you can only participate from a computer. </b> </p>" +
+    "<p class='instructions'>TEST4 Thank you for taking part in this survey. <b> Please note that you can only participate from a computer. </b> </p>" +
     "<p class='instructions'>We are going to ask you to imagine you are a medical researcher who wants to test the effectiveness of a fictitious medicine against a fictitious disease. " +
     "Your task will be to give your opinion on the effectiveness of this fictitious medicine .</p>" +
     "<p class='instructions'>If you have any question related to this research, please " +
@@ -83,7 +83,17 @@ var consigne = {
   "A placebo is a pill that resembles the medicine, but does not contain any substance affecting health. " + 
   "Medicines are typically compared to this type of pill to assess their effectiveness. </p>" + 
   "<p class= 'instructions_questionnary'>You will test a certain number of patients to determine the effectiveness of the medicine. </p>",
-  choices: ['I have read carefully and I can start the study']
+  choices: ['I have read carefully and I can start the study'],
+  on_load: function() {
+    // hide the button for 5 seconds
+    const btn = document.querySelector('.jspsych-html-button-response-button');    
+    btn.style.display = 'none';
+    btn.disabled = true;
+    setTimeout(function(){
+      btn.style.display = 'inline-block';
+      btn.disabled = false;
+    }, 5000);
+  }
 };
 
 var consigne_thinking = {
@@ -99,7 +109,16 @@ var consigne_thinking = {
   "A placebo is a pill that resembles the medicine, but does not contain any substance affecting health. " + 
   "Medicines are typically compared to this type of pill to assess their effectiveness. </p>" + 
   "<p class= 'instructions_questionnary'>You will test a certain number of patients to determine the effectiveness of the medicine. </p>",
-  choices: ['I have read carefully and I can start the study']
+  choices: ['I have read carefully and I can start the study'],
+  on_load: function() {
+    const btn = document.querySelector('.jspsych-html-button-response-button');
+    btn.style.display = 'none';
+    btn.disabled = true;
+    setTimeout(function(){
+      btn.style.display = 'inline-block';
+      btn.disabled = false;
+    }, 5000);
+  }
 };
 
 var stim = [
@@ -182,7 +201,16 @@ var feedback = {
     return `<img style='width: 250px;' src="${jsPsych.timelineVariable('image')}"></img>
             <p class='instructions'>You gave the <strong>${chosen_pilule}</strong>. The patient has <strong>${jsPsych.timelineVariable('diagnostic')}</strong>.</p>`;
   },
-  choices: ['Continue']
+  choices: ['Continue'],
+  on_load: function() {
+    const btn = document.querySelector('.jspsych-html-button-response-button');
+    btn.style.display = 'none';
+    btn.disabled = true;
+    setTimeout(function(){
+      btn.style.display = 'inline-block';
+      btn.disabled = false;
+    }, 1000);
+  }
 };
 
 var fastResponses = 0;  // Counter for quick responses
