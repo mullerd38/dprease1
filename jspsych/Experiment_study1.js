@@ -40,7 +40,7 @@ var welcome = {
   type: jsPsychHtmlButtonResponse,
   stimulus:
     "<h1 class ='custom-title'>Welcome</h1>" +
-    "<p class='instructions'>TEST5 Thank you for taking part in this survey. <b> Please note that you can only participate from a computer. </b> </p>" +
+    "<p class='instructions'>TEST6 Thank you for taking part in this survey. <b> Please note that you can only participate from a computer. </b> </p>" +
     "<p class='instructions'>We are going to ask you to imagine you are a medical researcher who wants to test the effectiveness of a fictitious medicine against a fictitious disease. " +
     "Your task will be to give your opinion on the effectiveness of this fictitious medicine .</p>" +
     "<p class='instructions'>If you have any question related to this research, please " +
@@ -92,7 +92,7 @@ var consigne = {
     setTimeout(function(){
       btn.style.visibility = 'visible';
       btn.disabled = false;
-    }, 10000);
+    }, 15000);
   }
 };
 
@@ -117,7 +117,7 @@ var consigne_thinking = {
     setTimeout(function(){
       btn.style.visibility = 'visible';
       btn.disabled = false;
-    }, 10000);
+    }, 15000);
   }
 };
 
